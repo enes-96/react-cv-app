@@ -9,10 +9,12 @@ export default function App() {
   return (
     <div className="app">
       <Header />
-      <TopSection />
-      <ExperienceSection />
-      <EducationSection />
-      <SkillSection />
+      <div className="cv-file">
+        <TopSection />
+        <ExperienceSection />
+        <EducationSection />
+        <SkillSection />
+      </div>
     </div>
   );
 }

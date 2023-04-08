@@ -1,13 +1,20 @@
 import React from "react";
-import "./Header.module.css";
+import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Header() {
   return (
-    <header>
+    <header className="header">
       <h1>CV Generator</h1>
-      <div className="header-links">
-        <p>github</p>
-      </div>
+      <a
+        href="https://github.com/enes-96/react-cv-app"
+        target="_blank"
+        rel="noreferrer"
+      >
+        {" "}
+        <FontAwesomeIcon icon={faGithub} className="github-icon" />
+      </a>
     </header>
   );
 }

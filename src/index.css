@@ -6,4 +6,13 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  background-color: #f3f4f6;
+}
+.cv-file {
+  height: calc(100vh - 102px);
+  width: calc(100% / 3);
+  margin: 6px auto;
+  border: 1px solid black;
+  background-color: white;
+  padding: 24px;
 }
