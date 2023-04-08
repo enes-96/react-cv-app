@@ -1,0 +1,40 @@
+input {
+  border: none;
+  outline: none;
+}
+.name {
+  font-size: 42px;
+}
+.job-title {
+  display: block;
+  font-size: 24px;
+}
+.user-data {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+}
+label {
+  font-size: 16px;
+  padding-right: 8px;
+}
+.user-data input {
+  font-size: 16px;
+}
+.text-area-wrapper {
+  position: relative;
+}
+textarea {
+  border: none;
+  resize: none;
+  width: 100% !important;
+  height: 80px !important;
+  outline: none;
+  margin: 12px 0 0 0;
+}
+.output-character {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: #f3f4f6;
+  font-size: 18px;
 }
 .cv-file {
-  height: calc(100vh - 102px);
-  width: calc(100% / 3);
-  margin: 6px auto;
-  border: 1px solid black;
+  height: 1123px;
+  width: 794px;
+  margin: 24px auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   padding: 24px;
 }
