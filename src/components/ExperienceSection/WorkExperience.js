@@ -6,11 +6,18 @@ export default function WorkExperience() {
     { dates: "", jobTitle: "", tasks: "" },
   ]);
 
+  //this is for the button
   const addWorkExperience = () => {
     setWorkExperience([
       ...workExperience,
       { dates: "", jobTitle: "", tasks: "" },
     ]);
+  };
+  const removeWorkExperience = () => {
+    const allExperiences = [...workExperience];
+    allExperiences.pop();
+    setWorkExperience(allExperiences);
+    console.log(allExperiences);
   };
 
   const handleDatesChange = (event, index) => {
@@ -37,7 +44,7 @@ export default function WorkExperience() {
         <div key={index} className="work-experience">
           <div className="work-experience-dates">
             <input
-              placeholder="Dates worked"
+              placeholder="2016 - 2023"
               className="date"
               type="text"
               value={experience.dates}
@@ -46,7 +53,7 @@ export default function WorkExperience() {
           </div>
           <div className="work-experience-job-title">
             <input
-              placeholder="Job title"
+              placeholder="Senior React Developer"
               className="job-title"
               type="text"
               value={experience.jobTitle}
@@ -64,6 +71,7 @@ export default function WorkExperience() {
         </div>
       ))}
       <button onClick={addWorkExperience}>Add Work Experience</button>
+      <button onClick={removeWorkExperience}>Remove Work Experience</button>
     </>
   );
 }
