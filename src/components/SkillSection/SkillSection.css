@@ -1,0 +1,10 @@
+.skill-wrapper {
+  margin: 12px 0;
+  display: flex;
+}
+.skill-input {
+  font-size: 18px;
+}
+.skill-grade {
+  font-size: 16px;
+}

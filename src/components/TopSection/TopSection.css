@@ -30,7 +30,6 @@ textarea {
   width: 100% !important;
   height: 80px !important;
   outline: none;
-  margin: 12px 0 0 0;
 }
 .output-character {
   font-size: 12px;

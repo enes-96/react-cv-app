@@ -37,11 +37,23 @@ export default function WorkExperience() {
     newWorkExperience[index].tasks = event.target.value;
     setWorkExperience(newWorkExperience);
   };
-
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+    if (workExperience.length > 1) {
+      removeWorkExperience();
+    }
+  };
   return (
     <>
+      <h2>Experience</h2>
+
       {workExperience.map((experience, index) => (
-        <div key={index} className="work-experience">
+        <div
+          key={index}
+          className="work-experience"
+          onDoubleClick={addWorkExperience}
+          onContextMenu={handleContextMenu}
+        >
           <div className="work-experience-dates">
             <input
               placeholder="2016 - 2023"
@@ -51,27 +63,27 @@ export default function WorkExperience() {
               onChange={(event) => handleDatesChange(event, index)}
             />
           </div>
-          <div className="work-experience-job-title">
-            <input
-              placeholder="Senior React Developer"
-              className="job-title"
-              type="text"
-              value={experience.jobTitle}
-              onChange={(event) => handleJobTitleChange(event, index)}
-            />
-          </div>
-          <div className="work-experience-tasks">
-            <textarea
-              placeholder="Work experience"
-              className="tasks"
-              value={experience.tasks}
-              onChange={(event) => handleTasksChange(event, index)}
-            />
+          <div>
+            <div className="work-experience-job-title">
+              <input
+                placeholder="Senior React Developer"
+                className="job-title"
+                type="text"
+                value={experience.jobTitle}
+                onChange={(event) => handleJobTitleChange(event, index)}
+              />
+            </div>
+            <div className="work-experience-tasks">
+              <textarea
+                placeholder="Work experience"
+                className="tasks"
+                value={experience.tasks}
+                onChange={(event) => handleTasksChange(event, index)}
+              />
+            </div>
           </div>
         </div>
       ))}
-      <button onClick={addWorkExperience}>Add Work Experience</button>
-      <button onClick={removeWorkExperience}>Remove Work Experience</button>
     </>
   );
 }
