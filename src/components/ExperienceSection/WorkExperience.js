@@ -4,6 +4,7 @@ import "./WorkExperience.css";
 export default function WorkExperience() {
   const [workExperience, setWorkExperience] = useState([
     { dates: "", jobTitle: "", tasks: "" },
+    { dates: "", jobTitle: "", tasks: "" },
   ]);
 
   //this is for the button

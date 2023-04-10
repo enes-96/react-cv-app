@@ -1,0 +1,21 @@
+.action-guide-container {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 6px;
+  left: 6px;
+  height: 32px;
+  width: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+}
+.action-guide-modal {
+  color: black;
+  top: -40px;
+  left: 40px;
+  width: 220px;
+  padding: 8px;
+
+  position: absolute;
+}

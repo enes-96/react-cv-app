@@ -5,6 +5,7 @@ import "./EducationSection.css";
 export default function EducationSection() {
   const [education, setEducation] = useState([
     { dates: "", location: "", certification: "" },
+    { dates: "", location: "", certification: "" },
   ]);
 
   //this is for the button

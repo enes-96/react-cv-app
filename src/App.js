@@ -4,6 +4,7 @@ import TopSection from "./components/TopSection/TopSection";
 import WorkExperience from "./components/ExperienceSection/WorkExperience";
 import EducationSection from "./components/EducationSection/EducationSection";
 import SkillSection from "./components/SkillSection/SkillSection";
+import ActionGuide from "./components/ActionGuide/ActionGuide";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <WorkExperience />
         <EducationSection />
         <SkillSection />
+        <ActionGuide />
       </div>
     </div>
   );
