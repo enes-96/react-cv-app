@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -15,4 +16,18 @@ body {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: white;
   padding: 24px;
+}
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 1.6cm;
+  }
+  .cv-file {
+    box-shadow: none;
+  }
+  button {
+    display: none;
+  }
 }

@@ -5,12 +5,15 @@ import WorkExperience from "./components/ExperienceSection/WorkExperience";
 import EducationSection from "./components/EducationSection/EducationSection";
 import SkillSection from "./components/SkillSection/SkillSection";
 import ActionGuide from "./components/ActionGuide/ActionGuide";
+import PrintButton from "./components/PrintButton";
 
 export default function App() {
   return (
     <div className="app">
       <Header />
-      <div className="cv-file">
+      <PrintButton />
+
+      <div className="cv-file" id="cv-file">
         <TopSection />
         <WorkExperience />
         <EducationSection />

@@ -15,3 +15,8 @@ h1 {
 .github-icon {
   height: 24px;
 }
+@media print {
+  .header {
+    display: none;
+  }
+}

@@ -19,3 +19,8 @@
 
   position: absolute;
 }
+@media print {
+  .action-guide-container {
+    display: none;
+  }
+}
